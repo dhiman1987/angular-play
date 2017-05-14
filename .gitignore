@@ -40,3 +40,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.vs/angular-play/v15/.suo
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite

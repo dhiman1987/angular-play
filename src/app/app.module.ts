@@ -6,13 +6,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MultiStateButton } from './multi-state-button/multiStateButton';
 import { CollapsibleComponent } from './collapsible-component/collapsible.component';
+import { SpinnerButton } from './spinner-button/spinner.button';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MultiStateButton,
-    CollapsibleComponent
+    CollapsibleComponent,
+    SpinnerButton
   ],
   imports: [
     BrowserModule,

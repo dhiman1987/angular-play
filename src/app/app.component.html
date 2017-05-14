@@ -124,7 +124,12 @@
   </collapsible-component>
   </div>
   <div class="jumbotron">
-    <p>This is just a div</p>
+    <h3>Spinner Button</h3>
+    <p>
+    A spinner button is a custom button which is typically used for long running tasks
+    One clicking the job starts and the button changes into a spinner
+    </p>
+    <spinner-button lable='Click' [showProgress]="showProgress" (click)="longTask()" class="btn btn-success btn-lg"></spinner-button>
   </div>
 
   </div>

@@ -24,6 +24,7 @@ constructor(private postSearchService:PostSearchService){}
 
 private searchTerms = new Subject<string>();
 posts: Observable<Post[]>;
+showProgress:boolean = false;
 
   actionHit : number;
   multiStateAction(state: number){
@@ -47,5 +48,10 @@ ngOnInit(): void {
       return Observable.of<Post[]>([]);
     });
 	}
+
+  longTask(){
+    this.showProgress=true;
+    setTimeout(()=>this.showProgress=false, 5000);
+  }
 
 }
