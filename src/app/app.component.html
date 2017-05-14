@@ -1,4 +1,4 @@
-<style>
+﻿<style>
 .my-fab{
 	width: 64px;
 	height: 64px;
@@ -66,9 +66,8 @@
 <div class="container">
   <h1>Play <small> with angular
         Post Search</small>
-      <input #searchBox id="search-box" (keyup)="search(searchBox.value)" /></h1>
+      <input class="form-control" #searchBox id="search-box" (keyup)="search(searchBox.value)" /></h1>
       <div>
-      results
         <div *ngFor="let post of posts | async">
           {{post.title}}
         </div>
@@ -111,6 +110,22 @@
   	<button #button class="btn btn-danger my-fab"><span class="glyphicon glyphicon-align-right"></span></button>
   </multi-state-button-group>
 
+  <div class="col-md-3">
+  <collapsible-component>
+    <template>
+      <button class="btn btn-lg btn-primary btn-block">Show Content</button>
+    </template>
+    <template>
+      <div class="panel panel-body">
+      <h3>Collapsed content</h3>
+      <p>This is a sample component</p>
+      </div>
+    </template>
+  </collapsible-component>
+  </div>
+  <div class="jumbotron">
+    <p>This is just a div</p>
+  </div>
 
   </div>
     </div>

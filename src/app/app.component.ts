@@ -1,4 +1,4 @@
-import { Component , OnInit} from '@angular/core';
+﻿import { Component , OnInit} from '@angular/core';
 import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
 // Observable class extensions
@@ -10,6 +10,7 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { Post } from './post.model';
 import { PostSearchService } from './post.search.service';
+import { CollapsibleComponent } from './collapsible-component/collapsible.component';
 
 @Component({
   selector: 'app-root',
